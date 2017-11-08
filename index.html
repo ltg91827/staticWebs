@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ti3-Interaction</title>
+
+    <!-- Bootstrap Styles-->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Bootsnav Styles-->
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <!-- Font-awesome Styles-->
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- My Styles-->
+    <link href="assets/css/style.css" rel="stylesheet" />
+</head>
+<body>
+<div class="">
+    <nav class="navbar navbar-default bootsnav">
+        <div class="container-fluid">
+            <!-- Start Header Navigation -->
+            <div class="navbar-header header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#" id="logoA"><img src="assets/img/logo.png" class="logo" alt=""></a>
+                <a class="navbar-brand" href="#"><p id="brandZH">Ti<sup>3</sup>能力知识图谱</p><br><p id="brandEN">Ti<sup>3</sup>-GRAPH</p></a>
+            </div>
+            <!-- End Header Navigation -->
+
+            <div class="collapse navbar-collapse" id="navbar-menu">
+                <ul class="nav navbar-nav navbar-left" data-in="fadeInDown" data-out="fadeInUp">
+                    <li class="dropdown megamenu-fw">
+                        <a href="#" class="dropdown-toggle">首页</a>
+                    </li>
+                    <li class="dropdown megamenu-fw">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">编辑</a>
+                        <ul class="dropdown-menu megamenu-content" role="menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-menu col-md-3 col-sm-3">
+                                        <a class="a-nav" href="#">能力义元及能力</a>
+                                    </div>
+                                    <div class="col-menu col-md-3 col-sm-3">
+                                        <a class="a-nav" href="#">非能力义元</a>
+                                    </div>
+                                    <div class="col-menu col-md-2 col-sm-2">
+                                        <a class="a-nav" href="#">物体</a>
+                                    </div>
+                                    <div class="col-menu col-md-2 col-sm-2">
+                                        <a class="a-nav" href="#">关系</a>
+                                    </div>
+                                    <div class="col-menu col-md-2 col-sm-2">
+                                        <a class="a-nav" href="#">导入/导出</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown megamenu-fw" id="checkLi">
+                        <a href="#" class="dropdown-toggle">校验</a>
+                        <ul class="dropdown-menu megamenu-content" role="menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-menu col-md-6">
+                                        <a class="a-nav" href="#">变更合并</a>
+                                    </div>
+                                    <div class="col-menu col-md-6">
+                                        <a class="a-nav" href="#">变更预览</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown megamenu-fw">
+                        <a href="#" class="dropdown-toggle">版本</a>
+                    </li>
+                    <li class="dropdown megamenu-fw" id="visualizationLi">
+                        <a href="#" class="dropdown-toggle">可视化</a>
+                        <ul class="dropdown-menu megamenu-content" role="menu">
+                            <li>
+                                <div class="row">
+                                    <div class="col-menu col-md-3">
+                                        <a class="a-nav" href="#">图信息</a>
+                                    </div>
+                                    <div class="col-menu col-md-3">
+                                        <a class="a-nav" href="#">图分析</a>
+                                    </div>
+                                    <div class="col-menu col-md-3">
+                                        <a class="a-nav" href="#">能力本体分析</a>
+                                    </div>
+                                    <div class="col-menu col-md-3">
+                                        <a class="a-nav" href="#">图统计</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <div class="nav navbar-nav navbar-right userDropdown">
+                    <div class="dropdown">
+                        <a href="#" class="dropdown-toggle welcomeWords" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            欢迎您，<span id="userName">XXX</span> <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">用户中心</a></li>
+                            <li><a href="#">消息中心</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- .container-fluid -->
+    </nav>
+
+    <div class="indexMain">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 indexTable">
+                    <table id="statisticTable">
+                        <tbody>
+                            <tr>
+                                <th colspan="2">数据统计</th>
+                            </tr>
+                            <tr>
+                                <td>义元统计：<span id="yiyuanStatisticNum">XXX</span></td>
+                                <td>能力统计：<span id="capabilityStatisticNum">XXX</span></td>
+                            </tr>
+                            <tr>
+                                <td>物体统计：<span id="equipmentStatisticNum">XXX</span></td>
+                                <td>关系统计：<span id="relationshipStatisticNum">XXX</span></td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                    <table id="versionTable">
+                        <tr>
+                            <th colspan="2">版本信息</th>
+                        </tr>
+                        <tr>
+                            <td>版本序号：<span id="versionNum">V1.0a</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>创建时间：<span id="versionCreatTime">2017.5.10 23:10:10</span></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>最后修改时间：<span id="versionLastChangeTime">2017.8.10 23:10:10</span></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <img src="assets/img/net.png" style="padding-top: 35px">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!-- jQuery Js -->
+<script src="assets/js/jquery-3.2.1.min.js" charset="utf-8"></script>
+<!-- Bootstrap Js -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Bootsnav Js -->
+<script src="assets/js/bootsnav.js"></script>
+</body>
+</html>
